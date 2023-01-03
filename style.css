@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Plus+Jakarta+Sans:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+  
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container{
+    width: 700px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    
+}
+
+.content > *{
+    margin: .4rem;
+}
+.content img{
+    width: 4vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.time-container p{
+    font-size: 13px;
+    color: rgba(0,0,0,.6);
+}
+
+.time-container{
+    
+    bottom: -10px;
+    left: 38px;
+}
+
+.input-container{
+    padding: .3rem;
+    border: 1px solid black;
+    
+}
+
+.text{
+    display: flex;
+    align-items: center;
+   
+}
+
+.text > * {
+    margin-right: .4rem;
+}
+
+.header h1, h4{
+    font-family: 'Kanit';
+}
+
+.header h4{
+    cursor: pointer;
+    padding: 9px;
+    color: rgba(0,0,0,.6);
+    
+}
+
+.header h4:hover{
+    background: rgba(0,0,0,.3);
+}
+
+.header h1 span{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 7px;
+    background: hsl(219, 85%, 26%);
+}
+
+.circle{
+    width: 9px;
+    height: 9px;
+    background: red;
+    border-radius: 50%;
+    display: none;
+}
+
+.content.active .circle{
+    display: block;
+}
+
+.content.active{
+    background: hsl(211, 68%, 94%);;
+}
+
+.text h5,p {
+    font-size: 16px;
+}
+
+.content:nth-child(6) img:nth-child(5){
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+h5{
+    font-family: 'Kanit';
+}
